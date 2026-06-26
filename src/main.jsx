@@ -6,6 +6,7 @@ import App from './App.jsx'
 import FM from './FM.jsx'
 import FeaturesList from './FeaturesList.jsx'
 import CollapseList from './CollapseList.jsx'
+import Button from './Button.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -14,7 +15,7 @@ createRoot(document.getElementById('root')).render(
         
         <Route path="/" element={<App />} />
         
-        
+        <Route path='/but' element={<Button/>}/>
         <Route path="/fm" element={<FM />} />
         <Route path='/list' element={<FeaturesList />}/>
         <Route path='/clist' element={<CollapseList />}/>
